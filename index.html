@@ -5,8 +5,8 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=yarika-2" />
-    <link rel="shortcut icon" href="/favicon.svg?v=yarika-2" />
+    <link rel="icon" type="image/svg+xml" href="/boldplay-courts/favicon.svg?v=yarika-2" />
+    <link rel="shortcut icon" href="/boldplay-courts/favicon.svg?v=yarika-2" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yarika — Book Sports Courts in Erbil, Kurdistan</title>
     <meta name="description" content="Find and book football pitches, padel courts, basketball courts, and more in Erbil, Kurdistan, Iraq. Rent sports venues by the hour from trusted local owners." />
@@ -26,11 +26,38 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    <script type="module" crossorigin src="/assets/index-B_qZcfMf.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CC3ViV8R.css">
+    <script type="module" crossorigin src="/boldplay-courts/assets/index-CKbTcN8W.js"></script>
+    <link rel="stylesheet" crossorigin href="/boldplay-courts/assets/index-CFwq6S_M.css">
   </head>
 
   <body>
+    <style>html,body,#root{min-height:100%;margin:0}body{background:#f4f7f7}#yarika-startup{z-index:2147483000;color:#173e3d;background:#f4f7f7;place-items:center;padding:24px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;display:grid;position:fixed;inset:0}#yarika-startup-card{text-align:center;width:min(100%,360px)}#yarika-startup-mark{letter-spacing:-.05em;margin:0 0 8px;font-size:32px;font-weight:700}#yarika-startup-message{color:#536b6a;margin:0;font-size:15px;line-height:1.6}#yarika-startup-spinner{border:3px solid #d7e4e2;border-top-color:#176b66;border-radius:50%;width:30px;height:30px;margin:26px auto 0;animation:.8s linear infinite yarika-spin}#yarika-startup-retry{color:#fff;font:inherit;cursor:pointer;background:#176b66;border:0;border-radius:10px;margin:20px auto 0;padding:11px 18px;font-weight:600;display:none}#yarika-startup.has-error #yarika-startup-spinner{display:none}#yarika-startup.has-error #yarika-startup-retry{display:inline-block}@keyframes yarika-spin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){#yarika-startup-spinner{animation-duration:2s}}</style>
+    <div id="yarika-startup" role="status" aria-live="polite">
+      <div id="yarika-startup-card">
+        <p id="yarika-startup-mark">Yarika</p>
+        <p id="yarika-startup-message">Loading your courts…</p>
+        <div id="yarika-startup-spinner" aria-hidden="true"></div>
+        <button id="yarika-startup-retry" type="button" onclick="window.location.reload()">Reload site</button>
+      </div>
+    </div>
+    <script>
+      window.__yarikaStartupError = function (message) {
+        var screen = document.getElementById('yarika-startup');
+        var text = document.getElementById('yarika-startup-message');
+        if (!screen || !text) return;
+        screen.classList.add('has-error');
+        screen.setAttribute('role', 'alert');
+        text.textContent = message || 'The site could not finish loading. Check your connection and try again.';
+      };
+      window.addEventListener('error', function (event) {
+        if (event.target && event.target.tagName === 'SCRIPT') window.__yarikaStartupError();
+      }, true);
+      window.setTimeout(function () {
+        if (document.getElementById('yarika-startup')) {
+          window.__yarikaStartupError('This is taking longer than expected. Check your connection, then reload the site.');
+        }
+      }, 15000);
+    </script>
     <div id="root"></div>
   </body>
 </html>
