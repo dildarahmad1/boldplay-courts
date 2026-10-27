@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    <script type="module" crossorigin src="/boldplay-courts/assets/index-5kt9WGVW.js"></script>
+    <script type="module" crossorigin src="/boldplay-courts/assets/index-B0ps677Q.js"></script>
     <link rel="stylesheet" crossorigin href="/boldplay-courts/assets/index-BPOEoTAl.css">
   </head>
 
@@ -41,13 +41,21 @@
       </div>
     </div>
     <script>
+      var startupLanguage = 'ckb';
+      try { startupLanguage = localStorage.getItem('boldplay-language') || 'ckb'; } catch (_) {}
+      var startupCopy = {"en": ["Loading your courts…", "The site could not finish loading. Check your connection and try again.", "This is taking longer than expected. Check your connection, then reload the site.", "Reload site"], "ar": ["جارٍ تحميل الملاعب…", "تعذر تحميل الموقع. تحقق من اتصالك وحاول مجددًا.", "يستغرق التحميل وقتًا أطول من المتوقع. تحقق من اتصالك وأعد تحميل الموقع.", "إعادة تحميل الموقع"], "ckb": ["یاریگاکانت بار دەکرێن…", "ماڵپەڕەکە بار نەکرا. پەیوەندییەکەت بپشکنە و دووبارە هەوڵ بدە.", "بارکردن زیاتر لە چاوەڕوانی دەخایەنێت. پەیوەندییەکەت بپشکنە و ماڵپەڕەکە نوێ بکەرەوە.", "ماڵپەڕ نوێ بکەرەوە"], "kmr": ["یاریگەهێن تە دهێنە بارکرن…", "ماڵپەڕ نەهاتە بارکرن. پەیوەندیا خۆ بپشکنە و دووبارە هەول بدە.", "بارکرن زێدەتر ژ چاڤەرێکرنێ دکێشیت. پەیوەندیا خۆ بپشکنە و ماڵپەڕی نوێ بکە.", "ماڵپەڕی نوێ بکە"]};
+      var startupText = startupCopy[startupLanguage] || startupCopy.ckb;
+      document.documentElement.lang = startupLanguage;
+      document.documentElement.dir = startupLanguage === 'en' ? 'ltr' : 'rtl';
+      document.getElementById('yarika-startup-message').textContent = startupText[0];
+      document.getElementById('yarika-startup-retry').textContent = startupText[3];
       window.__yarikaStartupError = function (message) {
         var screen = document.getElementById('yarika-startup');
         var text = document.getElementById('yarika-startup-message');
         if (!screen || !text) return;
         screen.classList.add('has-error');
         screen.setAttribute('role', 'alert');
-        text.textContent = message || 'The site could not finish loading. Check your connection and try again.';
+        text.textContent = message === 'This is taking longer than expected. Check your connection, then reload the site.' ? startupText[2] : startupText[1];
       };
       window.addEventListener('error', function (event) {
         if (event.target && event.target.tagName === 'SCRIPT') window.__yarikaStartupError();
