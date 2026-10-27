@@ -33,3 +33,7 @@ verify_jwt = false
 
 [functions.send-booking-confirmation]
 verify_jwt = true
+
+# Development utility: its own secret guard and ALLOW_DEMO_SEED gate are required.
+[functions.seed-demo-users]
+verify_jwt = false

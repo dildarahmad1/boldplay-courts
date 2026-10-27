@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "tasks": {
+    "check": "deno check functions/search-listings/index.ts functions/admin-create-host/index.ts functions/send-booking-confirmation/index.ts functions/seed-demo-users/index.ts",
+    "test": "deno test --allow-env=LOVABLE_CRON_SECRET,LOVABLE_CRON_SECRET_PREVIOUS functions/_shared/cron-auth_test.ts"
+  }
+}

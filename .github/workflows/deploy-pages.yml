@@ -42,8 +42,44 @@ jobs:
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
         with:
           path: dist
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: ci-fixture-password
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      PGHOST: localhost
+      PGPORT: '5432'
+      PGUSER: postgres
+      PGPASSWORD: ci-fixture-password
+      PGDATABASE: postgres
+      YARIKA_TEST_DATABASE: '1'
+    steps:
+      - name: Check out backend source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Set up Node.js for the pinned Deno runner
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22'
+      - name: Type-check deployable Edge Functions
+        run: npx --yes deno@2.9.6 task --config supabase/deno.json check
+      - name: Test scheduled-task authorization
+        run: npx --yes deno@2.9.6 task --config supabase/deno.json test
+      - name: Restore backend into an empty disposable database
+        run: bash scripts/check-backend-restore.sh
   deploy:
-    needs: build
+    needs: [build, backend]
     runs-on: ubuntu-latest
     permissions:
       pages: write

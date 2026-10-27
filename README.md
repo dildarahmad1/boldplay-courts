@@ -11,10 +11,13 @@ Live site: https://dildarahmad1.github.io/boldplay-courts/
 | `src/` | Editable React/TypeScript pages, components, translations and Supabase client |
 | `src/data/` | Public mapped venue directory and reference assets |
 | `supabase/schema.sql` | Current application database schema, functions, grants and row-level policies, exported without user records |
+| `supabase/auth.sql` | Account creation and email-verification triggers |
+| `supabase/permissions.sql` | Server access and application-role permission setup for a new project |
 | `supabase/storage.sql` | Storage bucket configuration and object access policies |
 | `supabase/reference-data.sql` | Public geography and cancellation-policy reference rows |
 | `supabase/migrations/` | Historical database changes and recent fixes |
-| `supabase/functions/` | Backend TypeScript functions and shared utilities |
+| `supabase/functions/` | Deployable backend TypeScript functions and shared utilities |
+| `supabase/archive/` | Old unsupported jobs excluded from deployment |
 | `supabase/config.toml` | Supabase project configuration |
 | `.github/workflows/deploy-pages.yml` | TypeScript checks, Vite build and GitHub Pages deployment |
 | `docs/backend.md` | Backend setup, deployed functions and access handoff |
@@ -46,12 +49,14 @@ The Vite development server uses port 8080. Obtain the public configuration from
 npx tsc --noEmit -p tsconfig.app.json
 npm run check:localization
 npm run check:search
+npx --yes deno@2.9.6 task --config supabase/deno.json check
+npx --yes deno@2.9.6 task --config supabase/deno.json test
 npm run build:pages
 ```
 
 ## Deploy
 
-Push to `main` or run **Actions → Build and deploy Yarika → Run workflow**. The workflow reads `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` from repository variables, checks the source, and deploys the compiled website to GitHub Pages.
+Push to `main` or run **Actions → Build and deploy Yarika → Run workflow**. The workflow reads `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` from repository variables, checks the frontend and backend source, tests database restoration in a disposable PostgreSQL 17 instance, and deploys the compiled website to GitHub Pages.
 
 Backend schema migrations and Edge Function deployments are separate operations; see [the backend guide](docs/backend.md). A frontend deployment does not automatically modify the production database.
 
