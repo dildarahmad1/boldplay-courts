@@ -6,6 +6,6 @@ if [[ "${YARIKA_TEST_DATABASE:-}" != "1" ]]; then
   exit 1
 fi
 cd "$(dirname "$0")/.."
-for file in supabase/tests/platform.sql supabase/schema.sql supabase/auth.sql supabase/permissions.sql supabase/storage.sql supabase/reference-data.sql supabase/tests/restore.spec.sql; do
+for file in supabase/tests/platform.sql supabase/schema.sql supabase/acl-restore.sql supabase/auth.sql supabase/permissions.sql supabase/storage.sql supabase/reference-data.sql supabase/tests/restore.spec.sql; do
   psql -X -v ON_ERROR_STOP=1 -f "$file"
 done

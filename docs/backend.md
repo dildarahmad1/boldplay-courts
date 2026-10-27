@@ -61,6 +61,7 @@ The public search function relies on Postgres row-level policies. The admin-crea
 Use a new development project, not the live production database.
 
 1. Restore `supabase/schema.sql` through a privileged connection to that empty Supabase database.
+   Then apply `supabase/acl-restore.sql`: Supabase's default privileges otherwise leave `anon` and `authenticated` with access to every restored table and function, wider than the original grants.
 2. Apply `supabase/auth.sql` for application-owned account and email-verification triggers.
 3. Apply `supabase/permissions.sql` for server access and application-role grant restrictions.
 4. Apply `supabase/storage.sql` for bucket configuration and object policies.
@@ -74,6 +75,7 @@ For a new hosted project, use its privileged database connection in `NEW_DATABAS
 ```sh
 psql "$NEW_DATABASE_URL" -X -v ON_ERROR_STOP=1 \
   -f supabase/schema.sql \
+  -f supabase/acl-restore.sql \
   -f supabase/auth.sql \
   -f supabase/permissions.sql \
   -f supabase/storage.sql \
@@ -92,7 +94,7 @@ Do not commit `.env.local`, service-role keys, database passwords, cron secrets 
 
 ## Public reference data and private records
 
-`reference-data.sql` contains geography and cancellation policies only. `src/data/` contains the public mapped venue dataset. User accounts, profile records, bookings, disputes, messages, payments, uploaded objects and authentication data stay in the live project. Transfer those only through an authorized private database backup or project access.
+`reference-data.sql` contains geography, cancellation policies and the platform financial settings (fee, tax and commission rates) that bookings require. `src/data/` contains the public mapped venue dataset. User accounts, profile records, bookings, disputes, messages, payments, uploaded objects and authentication data stay in the live project. Transfer those only through an authorized private database backup or project access.
 
 ## Verification before deployment
 
