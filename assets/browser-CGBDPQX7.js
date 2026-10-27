@@ -1,1 +1,0 @@
-import{a as e,i as t,n,o as r,r as i,s as a}from"./App-BqmTc5y6.js";a();export{n as Headers,i as Request,t as Response,e as default,r as fetch};

@@ -1,0 +1,3877 @@
+{
+  "fetchedAt": "2026-09-28",
+  "source": "OpenStreetMap via maps.mail.ru Overpass",
+  "license": "ODbL-1.0",
+  "query": "[out:json][timeout:45];area[\"ISO3166-2\"~\"^IQ-(AR|DA|SU|HA)$\"]->.a;nwr(area.a)[\"leisure\"~\"^(pitch|stadium|sports_centre)$\"];out center tags;",
+  "coverage": "Mapped features in OSM administrative areas IQ-AR, IQ-DA, IQ-SU, IQ-HA. Not a complete census; locations, ownership and booking availability require verification.",
+  "osmTimestamp": "2026-09-28T14:12:05Z",
+  "rawMappedFeatures": 1331,
+  "namedFeatures": 240,
+  "hostSuggestions": 182,
+  "venues": [
+    {
+      "id": "way/323811670",
+      "name": "5-a-side",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5500207,
+      "longitude": 45.4549726,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/323811670",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/953603998",
+      "name": "A Playground",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.0398789,
+      "longitude": 43.754898,
+      "sport": "soccer;football",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/953603998",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/264070539",
+      "name": "Akad football field",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2328044,
+      "longitude": 44.0012546,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/264070539",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "relation/12008821",
+      "name": "یاریگای ئارارات",
+      "aliases": [
+        "Ararat Stadium"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.3914066,
+      "longitude": 44.1865118,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/relation/12008821",
+      "names": {
+        "en": "Ararat Stadium",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/341708361",
+      "name": "Ararat training stadium",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.3948446,
+      "longitude": 44.1889898,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/341708361",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/9488720050",
+      "name": "Arena Sport 1",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1646711,
+      "longitude": 42.6781756,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/node/9488720050",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/9488721054",
+      "name": "Arena Sport 2",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1647167,
+      "longitude": 42.6780388,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/node/9488721054",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1445458526",
+      "name": "Arya Sport",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1459637,
+      "longitude": 42.6740626,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1445458526",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/836181935",
+      "name": "Ashti Stadium",
+      "aliases": [
+        "یاریگای ئاشتی",
+        "Ashti Stadium"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5577211,
+      "longitude": 45.4127043,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/836181935",
+      "names": {
+        "en": "Ashti Stadium",
+        "ar": "",
+        "ckb": "یاریگای ئاشتی",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/892719433",
+      "name": "azadi sports",
+      "aliases": [
+        "ملعب ئازادي",
+        "ياريگەها ئازادى"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.859791,
+      "longitude": 42.8364478,
+      "sport": "soccer;running",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/892719433",
+      "names": {
+        "en": "",
+        "ar": "ملعب ئازادي",
+        "ckb": "ياريگەها ئازادى",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/940859784",
+      "name": "Baharan Basketball",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5728643,
+      "longitude": 45.3897186,
+      "sport": "basketball",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/940859784",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/421882437",
+      "name": "باسکە",
+      "aliases": [
+        "كرة سلة",
+        "تەپا پێ",
+        "Basketball",
+        "Baske"
+      ],
+      "city": "دهوك",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8546672,
+      "longitude": 42.9220143,
+      "sport": "basketball",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/421882437",
+      "names": {
+        "en": "Basketball",
+        "ar": "كرة سلة",
+        "ckb": "تەپا پێ",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/421884513",
+      "name": "یاریگەها باسکە",
+      "aliases": [
+        "یاریگەی باسکە",
+        "Basketball Court",
+        "Yarîgeha Baske"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8564563,
+      "longitude": 42.9123148,
+      "sport": "basketball",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/421884513",
+      "names": {
+        "en": "Basketball Court",
+        "ar": "",
+        "ckb": "یاریگەی باسکە",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/406165206",
+      "name": "یاریگەها یانا باتیفا",
+      "aliases": [
+        "ملعب نادي باتيفا الرياضي",
+        "یاریگەها یانا باتیفا",
+        "Batifa Sport Club Stadium"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1682811,
+      "longitude": 43.0066364,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/406165206",
+      "names": {
+        "en": "Batifa Sport Club Stadium",
+        "ar": "ملعب نادي باتيفا الرياضي",
+        "ckb": "یاریگەها یانا باتیفا",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/195248894",
+      "name": "گۆڕەپانی ئاهەنگ",
+      "aliases": [
+        "مسرح الاحتفالات",
+        "Celebrations Stadium",
+        "Qada Ahenga"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.1932801,
+      "longitude": 43.9883787,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/195248894",
+      "names": {
+        "en": "Celebrations Stadium",
+        "ar": "مسرح الاحتفالات",
+        "ckb": "Qada Ahenga",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/488677222",
+      "name": "Chia Stadium",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5384334,
+      "longitude": 45.4457592,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/488677222",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/324138831",
+      "name": "یاریگای چوارقوڕنە",
+      "aliases": [
+        "یاریگای چوارقوڕنە",
+        "Chwarqurna Stadium"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2155972,
+      "longitude": 44.8228333,
+      "sport": "soccer",
+      "kind": "sports_centre",
+      "source": "https://www.openstreetmap.org/way/324138831",
+      "names": {
+        "en": "Chwarqurna Stadium",
+        "ar": "",
+        "ckb": "یاریگای چوارقوڕنە",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/324896285",
+      "name": "Closed Soccer Stadium",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.0977813,
+      "longitude": 44.6587776,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/324896285",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/401867412",
+      "name": "Closed Soccer Stadium",
+      "aliases": [],
+      "city": "Koya",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.0784915,
+      "longitude": 44.6487241,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/401867412",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1290238720",
+      "name": "قوتابخانەی دڵزاری بنەڕەتی تێکەڵاو",
+      "aliases": [
+        "Dlzar Elementary School Mixed"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.1837744,
+      "longitude": 44.0792513,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1290238720",
+      "names": {
+        "en": "Dlzar Elementary School Mixed",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/194416347",
+      "name": "Duhok Stadium",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8519467,
+      "longitude": 42.9963618,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/194416347",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/194416353",
+      "name": "یاریگەھا دھۆک",
+      "aliases": [
+        "ملعب دهوك",
+        "یاریگەی دھۆک",
+        "Duhok Stadium",
+        "Yarîgeha Dihok"
+      ],
+      "city": "دھۆک",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.851931,
+      "longitude": 42.9963806,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/194416353",
+      "names": {
+        "en": "Duhok Stadium",
+        "ar": "ملعب دهوك",
+        "ckb": "یاریگەی دھۆک",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/264956055",
+      "name": "مركز اربيل الرياضي",
+      "aliases": [
+        "مركز اربيل الرياضي",
+        "Erbil Sport Center"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2215487,
+      "longitude": 43.9877641,
+      "sport": "multi;soccer;tennis;basketball;swimming;running",
+      "kind": "sports_centre",
+      "source": "https://www.openstreetmap.org/way/264956055",
+      "names": {
+        "en": "Erbil Sport Center",
+        "ar": "مركز اربيل الرياضي",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/258435257",
+      "name": "یاریگای نێودەوڵەتی فرانسۆ هەریری",
+      "aliases": [
+        "ملعب فرانسو حریري",
+        "یاریگای نێودەوڵەتی فرانسۆ هەریری",
+        "Faranso Hariri Stadion",
+        "Faranso Hariri International Stadium",
+        "Yarîgeha navdewletya Firanso Herîrî"
+      ],
+      "city": "هەولێر",
+      "region": "پارێزگای هەولێر",
+      "address": "شەقامی قاسملۆ",
+      "latitude": 36.1725233,
+      "longitude": 44.0116726,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/258435257",
+      "names": {
+        "en": "Faranso Hariri International Stadium",
+        "ar": "ملعب فرانسو حریري",
+        "ckb": "یاریگای نێودەوڵەتی فرانسۆ هەریری",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1013448772",
+      "name": "یاریگای دووەمی تۆپی پێی فرانسۆ هەریری",
+      "aliases": [
+        "یاریگای دووەمی تۆپی پێی فرانسۆ هەریری",
+        "Faranso Hariri second football stadium"
+      ],
+      "city": "هەولێر",
+      "region": "پارێزگای هەولێر",
+      "address": "",
+      "latitude": 36.1728284,
+      "longitude": 44.0130186,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1013448772",
+      "names": {
+        "en": "Faranso Hariri second football stadium",
+        "ar": "",
+        "ckb": "یاریگای دووەمی تۆپی پێی فرانسۆ هەریری",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/421882544",
+      "name": "تەپا پێ",
+      "aliases": [
+        "تۆپی پێ",
+        "Football Field",
+        "Tepa Pê"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8548392,
+      "longitude": 42.922472,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/421882544",
+      "names": {
+        "en": "Football Field",
+        "ar": "",
+        "ckb": "تۆپی پێ",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/264055332",
+      "name": "Four in one football field",
+      "aliases": [],
+      "city": "هەولێر",
+      "region": "پارێزگای هەولێر",
+      "address": "",
+      "latitude": 36.2391281,
+      "longitude": 43.9916042,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/264055332",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/9204787204",
+      "name": "یاریگای نێودەوڵەتی فرانسۆ هەریری",
+      "aliases": [
+        "ملعب فرنسو حريري الدولي",
+        "یاریگای نێودەوڵەتی فرانسۆ هەریری",
+        "Franco Hariri International Stadium",
+        "Yarîgeha navdewletya Firanso Herîrî"
+      ],
+      "city": "ھەولێر",
+      "region": "پارێزگای ھەولێر",
+      "address": "شەقامی قاسملۆ",
+      "latitude": 36.1724364,
+      "longitude": 44.010819,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/node/9204787204",
+      "names": {
+        "en": "Franco Hariri International Stadium",
+        "ar": "ملعب فرنسو حريري الدولي",
+        "ckb": "یاریگای نێودەوڵەتی فرانسۆ هەریری",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/343901669",
+      "name": "GARA",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8508048,
+      "longitude": 43.0301721,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/343901669",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/481270626",
+      "name": "Garden City Sport Pitch",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5826123,
+      "longitude": 45.4419292,
+      "sport": "",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/481270626",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/481270627",
+      "name": "Garden City Sport Pitch",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.582624,
+      "longitude": 45.441417,
+      "sport": "",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/481270627",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1120628031",
+      "name": "یاریگای حاجیاوا",
+      "aliases": [
+        "Hajiawa Stadium"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2214399,
+      "longitude": 44.800015,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1120628031",
+      "names": {
+        "en": "Hajiawa Stadium",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/392524208",
+      "name": "یاریگەی تۆپانێی مامۆستایانی زانکۆ",
+      "aliases": [
+        "Handasa Football Pitch"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.139733,
+      "longitude": 44.0215068,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/392524208",
+      "names": {
+        "en": "Handasa Football Pitch",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/405156961",
+      "name": "یاریگەی کەلەکین",
+      "aliases": [
+        "Kalakin Stadium",
+        "یاریگای کەلەکین"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.6154001,
+      "longitude": 44.3402638,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/405156961",
+      "names": {
+        "en": "Kalakin Stadium",
+        "ar": "",
+        "ckb": "یاریگای کەلەکین",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/775085220",
+      "name": "Kamal Salim Stadium",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5691108,
+      "longitude": 45.4452129,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/775085220",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/979779412",
+      "name": "kani stadium",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2194491,
+      "longitude": 44.0209492,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/979779412",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1015005419",
+      "name": "یاریگای کاوانیان",
+      "aliases": [
+        "یاریگای کاوانیان",
+        "Kawanyan Football Stadium"
+      ],
+      "city": "Kawanyan",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.4630508,
+      "longitude": 44.0668579,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1015005419",
+      "names": {
+        "en": "Kawanyan Football Stadium",
+        "ar": "",
+        "ckb": "یاریگای کاوانیان",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/361603524",
+      "name": "یاریگای تۆپی پێی خەلیفان",
+      "aliases": [
+        "Khalifan Football Stadium",
+        "یاریگای تۆپی پێی خەلیفان"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "Khalifan",
+      "latitude": 36.6085858,
+      "longitude": 44.4116997,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/361603524",
+      "names": {
+        "en": "Khalifan Football Stadium",
+        "ar": "",
+        "ckb": "یاریگای تۆپی پێی خەلیفان",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/264055617",
+      "name": "Kuran football field",
+      "aliases": [
+        "یاریگای کورانی عەنکاوە"
+      ],
+      "city": "أربيل",
+      "region": "محافظة أربيل",
+      "address": "",
+      "latitude": 36.2233636,
+      "longitude": 44.0032151,
+      "sport": "football",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/264055617",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای کورانی عەنکاوە",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1425624873",
+      "name": "Malta Sport",
+      "aliases": [],
+      "city": "دهۆک",
+      "region": "پارێزگای دهۆک",
+      "address": "ڕێکا زاخۆ",
+      "latitude": 36.8570404,
+      "longitude": 42.9375828,
+      "sport": "padel;miniature_golf;table_tennis;badminton",
+      "kind": "sports_centre",
+      "source": "https://www.openstreetmap.org/way/1425624873",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/892719460",
+      "name": "meer ground",
+      "aliases": [
+        "ملعب مير",
+        "ياريكه ها مير"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8628449,
+      "longitude": 42.8386222,
+      "sport": "soccer;running",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/892719460",
+      "names": {
+        "en": "",
+        "ar": "ملعب مير",
+        "ckb": "ياريكه ها مير",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1290241206",
+      "name": "ملعب ميلان",
+      "aliases": [
+        "Milan stadium"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8628852,
+      "longitude": 42.9529663,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1290241206",
+      "names": {
+        "en": "Milan stadium",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/549557273",
+      "name": "ساحا مرێبکا",
+      "aliases": [
+        "Mrêbka Stadium"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.0798447,
+      "longitude": 43.4936385,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/549557273",
+      "names": {
+        "en": "Mrêbka Stadium",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1094223853",
+      "name": "یاریگای سیروانی نوێ",
+      "aliases": [
+        "یاریگای سیروانی نوێ",
+        "New Sirwan Stadium"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5689049,
+      "longitude": 45.3885188,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1094223853",
+      "names": {
+        "en": "New Sirwan Stadium",
+        "ar": "",
+        "ckb": "یاریگای سیروانی نوێ",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1505161946",
+      "name": "Pell Center",
+      "aliases": [
+        "بيل سنتر",
+        "پێل سه‌نته‌ر"
+      ],
+      "city": "زاخو",
+      "region": "Kurdistan Region",
+      "address": "ده‌شتمر",
+      "latitude": 37.1157858,
+      "longitude": 42.6987583,
+      "sport": "swimming;equestrian;multi",
+      "kind": "sports_centre",
+      "source": "https://www.openstreetmap.org/way/1505161946",
+      "names": {
+        "en": "",
+        "ar": "بيل سنتر",
+        "ckb": "پێل سه‌نته‌ر",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/374499904",
+      "name": "perdawd",
+      "aliases": [
+        "ناحية شمامك"
+      ],
+      "city": "هەولێر",
+      "region": "محافظة أربيل",
+      "address": "",
+      "latitude": 36.0221509,
+      "longitude": 43.9194813,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/374499904",
+      "names": {
+        "en": "",
+        "ar": "ناحية شمامك",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1290239375",
+      "name": "یاریگای پێشمەرگە",
+      "aliases": [
+        "ملعب كرة القدم للبيشمركة",
+        "Peshmarga Football Playground",
+        "یاریگای پێشمەرگە"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.1543048,
+      "longitude": 44.1365617,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1290239375",
+      "names": {
+        "en": "Peshmarga Football Playground",
+        "ar": "ملعب كرة القدم للبيشمركة",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/911709759",
+      "name": "qa3ay asny balen",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5830961,
+      "longitude": 45.4260917,
+      "sport": "",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/911709759",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/300572877",
+      "name": "یاریگای قەسرێ",
+      "aliases": [
+        "ملعب قصري",
+        "یاریگای قەسرێ",
+        "Qasre Stadium",
+        "Yarîgeha Qesrê"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "Qasre, Ranya, Iraq",
+      "latitude": 36.5561287,
+      "longitude": 44.8264892,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/300572877",
+      "names": {
+        "en": "Qasre Stadium",
+        "ar": "ملعب قصري",
+        "ckb": "یاریگای قەسرێ",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/532640136",
+      "name": "یاریگای سه‌رنه‌وس",
+      "aliases": [
+        "یاریگای ڕەژیکەریان",
+        "Razhikarean F.C Stadium"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.5533911,
+      "longitude": 44.7506403,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/532640136",
+      "names": {
+        "en": "Razhikarean F.C Stadium",
+        "ar": "یاریگای ڕەژیکەریان",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1543343688",
+      "name": "یاریگای یانەی ڕزگاری",
+      "aliases": [
+        "یاریگای یانەی ڕزگاری",
+        "Rizgari Club Stadium"
+      ],
+      "city": "Rizgary",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 34.6565527,
+      "longitude": 45.2406396,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/1543343688",
+      "names": {
+        "en": "Rizgari Club Stadium",
+        "ar": "",
+        "ckb": "یاریگای یانەی ڕزگاری",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/837784575",
+      "name": "saha chalaka",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5773226,
+      "longitude": 45.4070177,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/837784575",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/837784576",
+      "name": "saha chalaka",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5772744,
+      "longitude": 45.4066937,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/837784576",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1110489670",
+      "name": "Saruchawa Small Stadium",
+      "aliases": [
+        "ملعب کرة قدم سروجاوە صغیرة",
+        "یاریگای بچووکی سەروچاوە",
+        "Saruchawa Small Stadium"
+      ],
+      "city": "سوران",
+      "region": "محافظة أربيل",
+      "address": "Shahin Qader",
+      "latitude": 36.6650453,
+      "longitude": 44.5594823,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1110489670",
+      "names": {
+        "en": "Saruchawa Small Stadium",
+        "ar": "ملعب کرة قدم سروجاوە صغیرة",
+        "ckb": "یاریگای بچووکی سەروچاوە",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/5127183622",
+      "name": "Saruchawa Stadium",
+      "aliases": [],
+      "city": "سوران",
+      "region": "محافظة أربيل",
+      "address": "Mustafa Ballak",
+      "latitude": 36.6660996,
+      "longitude": 44.5593134,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/node/5127183622",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/361710376",
+      "name": "Saruchawa Stadium",
+      "aliases": [
+        "ملعب كرة قدم سروجاوە",
+        "یاریگای سەروچاوە",
+        "Saruchawa Stadium",
+        "yarîgaî Topî Pêiy Saruchawa"
+      ],
+      "city": "سوران",
+      "region": "محافظة أربيل",
+      "address": "Mustafa Ballak",
+      "latitude": 36.6661512,
+      "longitude": 44.5593935,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/361710376",
+      "names": {
+        "en": "Saruchawa Stadium",
+        "ar": "ملعب كرة قدم سروجاوە",
+        "ckb": "یاریگای سەروچاوە",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1139262325",
+      "name": "school sport pitch",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1479185,
+      "longitude": 42.6439683,
+      "sport": "tennis",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1139262325",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/786393816",
+      "name": "school stadium",
+      "aliases": [],
+      "city": "شقلاوة",
+      "region": "محافظة أربيل",
+      "address": "Sarmaydan Street",
+      "latitude": 36.4075781,
+      "longitude": 44.3065086,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/786393816",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/349428109",
+      "name": "یاریگه‌ها سێمێل",
+      "aliases": [
+        "ملعب سيميل",
+        "یاریگەی سێمێل",
+        "Semel Stadium",
+        "Yarîgeha Sêmêl"
+      ],
+      "city": "Semel",
+      "region": "Kurdistan Region",
+      "address": "Duhok-Zakho Road",
+      "latitude": 36.8612074,
+      "longitude": 42.8592369,
+      "sport": "football;soccer;running",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/349428109",
+      "names": {
+        "en": "Semel Stadium",
+        "ar": "ملعب سيميل",
+        "ckb": "یاریگەی سێمێل",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1342132124",
+      "name": "یاریگای شەهید ئەنوەر",
+      "aliases": [
+        "یاریگای شەهید ئەنوەر",
+        "shahid anwar stadium"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.3165683,
+      "longitude": 45.66328,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/1342132124",
+      "names": {
+        "en": "shahid anwar stadium",
+        "ar": "",
+        "ckb": "یاریگای شەهید ئەنوەر",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1239146821",
+      "name": "یاریگای شەهید مامە قالە",
+      "aliases": [
+        "ملعب شهيد مامە قالە",
+        "یاریگای شەهید مامە قالە",
+        "Shahid mama qala Stadium"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5047212,
+      "longitude": 44.8483879,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/1239146821",
+      "names": {
+        "en": "Shahid mama qala Stadium",
+        "ar": "ملعب شهيد مامە قالە",
+        "ckb": "یاریگای شەهید مامە قالە",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/230943812",
+      "name": "یاریگای شەهید سالح",
+      "aliases": [
+        "Shahid Salih Soccer Field"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 34.6332329,
+      "longitude": 45.3040874,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/230943812",
+      "names": {
+        "en": "Shahid Salih Soccer Field",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/575124349",
+      "name": "Shahid Ziad soccer field",
+      "aliases": [
+        "ملعب شهید زیاد",
+        "یاریگای شەهید زیاد"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.9989573,
+      "longitude": 44.0348917,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/575124349",
+      "names": {
+        "en": "",
+        "ar": "ملعب شهید زیاد",
+        "ckb": "یاریگای شەهید زیاد",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/606037578",
+      "name": "ياريگه‌ها شام",
+      "aliases": [
+        "ملعب شام",
+        "sham small  stadium"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.163189,
+      "longitude": 42.6855164,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/606037578",
+      "names": {
+        "en": "sham small  stadium",
+        "ar": "ملعب شام",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/298444896",
+      "name": "ياريگاى شەقڵاوە",
+      "aliases": [
+        "ملعب شقلاوة",
+        "ياريگاى شەقڵاوە",
+        "Shaqlawa Stadium",
+        "Yarîgeha Şeqllawe"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.4043473,
+      "longitude": 44.3182857,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/298444896",
+      "names": {
+        "en": "Shaqlawa Stadium",
+        "ar": "ملعب شقلاوة",
+        "ckb": "ياريگاى شەقڵاوە",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/911752809",
+      "name": "یاریگای وەرزشی شار",
+      "aliases": [
+        "Shar Stadium"
+      ],
+      "city": "slemani",
+      "region": "Kurdistan Region",
+      "address": "xabat 213",
+      "latitude": 35.5446386,
+      "longitude": 45.4343206,
+      "sport": "football",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/911752809",
+      "names": {
+        "en": "Shar Stadium",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/384582219",
+      "name": "Sirwan Stadium",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5689071,
+      "longitude": 45.3884522,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/384582219",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/5685195602",
+      "name": "ملعب سيروان",
+      "aliases": [
+        "Sirwan yard",
+        "yarigeha Sirwan"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8593595,
+      "longitude": 42.9318475,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/node/5685195602",
+      "names": {
+        "en": "Sirwan yard",
+        "ar": "",
+        "ckb": "yarigeha Sirwan",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/311761761",
+      "name": "Soccer field of surchian",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.3545058,
+      "longitude": 43.8018072,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/311761761",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "relation/13393669",
+      "name": "ياريگەها وەرزشی",
+      "aliases": [
+        "ملعب الرياضي",
+        "یاریگەی وەرزشی",
+        "Sport",
+        "Yarîgeha Werzişî"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8619332,
+      "longitude": 42.9546939,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/relation/13393669",
+      "names": {
+        "en": "Sport",
+        "ar": "ملعب الرياضي",
+        "ckb": "یاریگەی وەرزشی",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/277709932",
+      "name": "یاریگای ١٦ ئاب",
+      "aliases": [
+        "یاریگای ١٦ ئاب",
+        "Stadium August 16"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.1667573,
+      "longitude": 43.988988,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/277709932",
+      "names": {
+        "en": "Stadium August 16",
+        "ar": "یاریگای ١٦ ئاب",
+        "ckb": "یاریگای ١٦ ئاب",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/776018731",
+      "name": "Stadium sherwana",
+      "aliases": [],
+      "city": "Kalar",
+      "region": "Kurdistan Region",
+      "address": "sherwana",
+      "latitude": 34.6296415,
+      "longitude": 45.3017051,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/776018731",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/909131241",
+      "name": "stadium zana",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.3175252,
+      "longitude": 45.6790891,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/909131241",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/489459416",
+      "name": "یاریگای وەرزشی تەکیە",
+      "aliases": [
+        "ملعب تکیە",
+        "Takiya Football Club Stadium",
+        "یاریگای تەکیە"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.6294724,
+      "longitude": 44.9609407,
+      "sport": "soccer;athletics;football",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/489459416",
+      "names": {
+        "en": "Takiya Football Club Stadium",
+        "ar": "ملعب تکیە",
+        "ckb": "یاریگای تەکیە",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/320507598",
+      "name": "tatanaka footbal",
+      "aliases": [
+        "tatanaka footbal"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5835464,
+      "longitude": 45.3875386,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/320507598",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "tatanaka footbal",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/775102256",
+      "name": "tatani tasluja",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.59263,
+      "longitude": 45.2292709,
+      "sport": "",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/775102256",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/303249087",
+      "name": "Tennis field",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.0788589,
+      "longitude": 44.6334818,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/303249087",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/327413798",
+      "name": "Venus Football",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2389891,
+      "longitude": 43.9835626,
+      "sport": "football",
+      "kind": "sports_centre",
+      "source": "https://www.openstreetmap.org/way/327413798",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/975390464",
+      "name": "یاری تۆپی دةست",
+      "aliases": [
+        "الكرة الطائرة",
+        "یاری تۆپی دةست",
+        "volleyball"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.23066,
+      "longitude": 44.1687745,
+      "sport": "volleyball",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/975390464",
+      "names": {
+        "en": "volleyball",
+        "ar": "الكرة الطائرة",
+        "ckb": "یاری تۆپی دةست",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/693627867",
+      "name": "یاریگای یانەی برایەتی",
+      "aliases": [
+        "Yanae brayate",
+        "یاریگای یانەی برایەتی"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.161694,
+      "longitude": 44.0630709,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/693627867",
+      "names": {
+        "en": "Yanae brayate",
+        "ar": "",
+        "ckb": "یاریگای یانەی برایەتی",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/323811671",
+      "name": "yaregay baban",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.550519,
+      "longitude": 45.4541309,
+      "sport": "soccer;football",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/323811671",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/764548265",
+      "name": "yarigai chwarbax",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5529342,
+      "longitude": 45.4327495,
+      "sport": "volleyball",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/764548265",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/775101561",
+      "name": "yarigai said mlazm karim",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5919376,
+      "longitude": 45.2328844,
+      "sport": "",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/775101561",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/323665632",
+      "name": "Yarigai Shahid Mamosta Mahdi",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.1893883,
+      "longitude": 45.1314282,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/323665632",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/864965663",
+      "name": "yarigeh",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1475102,
+      "longitude": 42.7497008,
+      "sport": "",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/864965663",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1149649268",
+      "name": "Yarigeh",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1818779,
+      "longitude": 43.019271,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1149649268",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/229626032",
+      "name": "YARİGA",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8523422,
+      "longitude": 44.1298914,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/229626032",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/229625107",
+      "name": "YARİGEH",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.0840306,
+      "longitude": 43.5135387,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/229625107",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/229625366",
+      "name": "YARİGEH",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.95541,
+      "longitude": 43.973005,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/229625366",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/229625675",
+      "name": "YARİGEH",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.9253993,
+      "longitude": 44.0338804,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/229625675",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/229625931",
+      "name": "YARİGEH",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8661786,
+      "longitude": 44.0628535,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/229625931",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/229625957",
+      "name": "YARİGEH",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8682948,
+      "longitude": 44.0604556,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/229625957",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/229626195",
+      "name": "YARİGEH",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.0042952,
+      "longitude": 43.8721728,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/229626195",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/488642653",
+      "name": "yarygay ararat",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5241988,
+      "longitude": 45.464116,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/488642653",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/229481034",
+      "name": "Yarîgeh",
+      "aliases": [
+        "ياریگه‌"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.0606749,
+      "longitude": 43.6446997,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/229481034",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "ياریگه‌",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/480065775",
+      "name": "Yarîgeha Azadîyê",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.0470053,
+      "longitude": 43.3576403,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/480065775",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/229480988",
+      "name": "yarıgeh",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.0561194,
+      "longitude": 43.6443091,
+      "sport": "",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/229480988",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/543125183",
+      "name": "یاریگه‌ها زاخۆ یا نێڤده‌وله‌تی",
+      "aliases": [
+        "ملعب زاخو الدولي",
+        "یاریگەی زاخۆی نێودەوڵەتی",
+        "Zakho International Stadium",
+        "Yarîgeha Zaxo ya Nêvdewletî"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1459677,
+      "longitude": 42.6722439,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/543125183",
+      "names": {
+        "en": "Zakho International Stadium",
+        "ar": "ملعب زاخو الدولي",
+        "ckb": "یاریگەی زاخۆی نێودەوڵەتی",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/277709893",
+      "name": "یاریگای زانكۆ",
+      "aliases": [
+        "Zanko Stadium"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.1731681,
+      "longitude": 43.9836128,
+      "sport": "",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/277709893",
+      "names": {
+        "en": "Zanko Stadium",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/543622550",
+      "name": "Zharawa Staduim",
+      "aliases": [
+        "یاریگای تارتانی ژاراوە"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2291825,
+      "longitude": 45.0678174,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/543622550",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای تارتانی ژاراوە",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/5685282659",
+      "name": "ملعب زركا الرياضي",
+      "aliases": [
+        "zirka stadium",
+        "یاریگەھا زرکا"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8773012,
+      "longitude": 42.922905,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/node/5685282659",
+      "names": {
+        "en": "zirka stadium",
+        "ar": "",
+        "ckb": "یاریگەھا زرکا",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/3957538389",
+      "name": "ئاشتی ٢",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2163702,
+      "longitude": 44.1218524,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/node/3957538389",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/777797935",
+      "name": "تاتانی ئاغجەلەر",
+      "aliases": [],
+      "city": "ئاغجەلەر",
+      "region": "Kurdistan Region",
+      "address": "تەنیشت جادەی گەڵابەکان",
+      "latitude": 35.7520055,
+      "longitude": 44.8963273,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/777797935",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/5685208092",
+      "name": "جھێ وەرزسێ یێ قوتابخانا زرکا",
+      "aliases": [
+        "جھێ وەرزشێ یێ ئامادەیا زرکا",
+        "Kavot school"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8793361,
+      "longitude": 42.9293627,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/node/5685208092",
+      "names": {
+        "en": "",
+        "ar": "جھێ وەرزشێ یێ ئامادەیا زرکا",
+        "ckb": "Kavot school",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/549553005",
+      "name": "ساحا گرێ بيێ",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.2237718,
+      "longitude": 43.1011908,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/549553005",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1151327428",
+      "name": "ساحة",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1614695,
+      "longitude": 42.6705863,
+      "sport": "soccer",
+      "kind": "sports_centre",
+      "source": "https://www.openstreetmap.org/way/1151327428",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/895236987",
+      "name": "ساحه‌ی کارێزه‌وشک",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5781679,
+      "longitude": 45.4249827,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/895236987",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/597782613",
+      "name": "ملعب بيرسفي صغرى",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1849118,
+      "longitude": 42.8561282,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/597782613",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/10711912051",
+      "name": "ملعب دلال",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1352939,
+      "longitude": 42.6782593,
+      "sport": "",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/node/10711912051",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1140120836",
+      "name": "ملعب رياضي مصغر",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1496271,
+      "longitude": 42.9305357,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1140120836",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/541360427",
+      "name": "ملعب شهيد صبرى عرب",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1691721,
+      "longitude": 43.0143721,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/541360427",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/542949384",
+      "name": "ملعب مصغر",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1671974,
+      "longitude": 42.69736,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/542949384",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/4472903333",
+      "name": "ناوەندی لاوانی دارەتوو",
+      "aliases": [],
+      "city": "ھەولێر",
+      "region": "پارێزگای ھەولێر",
+      "address": "",
+      "latitude": 36.1172762,
+      "longitude": 44.071873,
+      "sport": "multi",
+      "kind": "sports_centre",
+      "source": "https://www.openstreetmap.org/node/4472903333",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/450369655",
+      "name": "ناوەندی لاوانی دارەتوو",
+      "aliases": [],
+      "city": "ھەولێر",
+      "region": "پارێزگای ھەولێر",
+      "address": "",
+      "latitude": 36.1169372,
+      "longitude": 44.071836,
+      "sport": "multi",
+      "kind": "sports_centre",
+      "source": "https://www.openstreetmap.org/way/450369655",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/979417249",
+      "name": "ياريكاى وه رزشى بروسك",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2149508,
+      "longitude": 44.028555,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/979417249",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/374499972",
+      "name": "پەروەردە",
+      "aliases": [],
+      "city": "هەولێر",
+      "region": "محافظة أربيل",
+      "address": "",
+      "latitude": 36.0237146,
+      "longitude": 43.9187325,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/374499972",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/488654257",
+      "name": "گۆڕەپانی بەهێز",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5324992,
+      "longitude": 45.4440948,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/488654257",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/870694395",
+      "name": "گۆڕەپانی کارا",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5301793,
+      "longitude": 45.4448133,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/870694395",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1324345392",
+      "name": "یاریگاری نزاری",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8669563,
+      "longitude": 44.5600169,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1324345392",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/436435063",
+      "name": "یاریگاى ده‌ربه‌ندیخان",
+      "aliases": [
+        "Yarigay Darbandikhan"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.1207489,
+      "longitude": 45.6713773,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/436435063",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "Yarigay Darbandikhan",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/8355202996",
+      "name": "یاریگاى سەللەى بالیسان",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.3960128,
+      "longitude": 44.5432085,
+      "sport": "basketball",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/node/8355202996",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/245269851",
+      "name": "یاریگاى شه‌هید محمودى مامه‌ عه‌زه",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.1189914,
+      "longitude": 45.6884351,
+      "sport": "",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/245269851",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1290237337",
+      "name": "یاریگاى گەورەى تۆپى پێ لە بالیسان",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.3952699,
+      "longitude": 44.543689,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1290237337",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/304663156",
+      "name": "یاریگای 11 یاریزانی",
+      "aliases": [
+        "یاریگای 11 یاریزانی"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.1603348,
+      "longitude": 44.1093692,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/304663156",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای 11 یاریزانی",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/764537792",
+      "name": "یاریگای ئازادی",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.1987533,
+      "longitude": 44.8816529,
+      "sport": "soccer;american_football",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/764537792",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/775584478",
+      "name": "یاریگای ئازادە ڕەش",
+      "aliases": [
+        "یاریگای ئازادە ڕەش"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2652657,
+      "longitude": 44.8643454,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/775584478",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای ئازادە ڕەش",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/368261542",
+      "name": "یاریگای ئاسۆ;Aso ملعب ئاسو",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.1588329,
+      "longitude": 44.0494796,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/368261542",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1079942719",
+      "name": "یاریگای ئاوارەکان",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 34.6451765,
+      "longitude": 45.3226387,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1079942719",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1078574006",
+      "name": "یاریگای بازاڕ",
+      "aliases": [
+        "یاریگای بازاڕ"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 34.6182077,
+      "longitude": 45.3115638,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1078574006",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای بازاڕ",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1160822367",
+      "name": "یاریگای باسنێ",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.8915888,
+      "longitude": 45.5885398,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1160822367",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1551972445",
+      "name": "یاریگای باوەڕ",
+      "aliases": [
+        "یاریگای باوەڕ"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2317907,
+      "longitude": 44.78384,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1551972445",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای باوەڕ",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1080300778",
+      "name": "یاریگای بێ ئیشەکان",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 34.6365446,
+      "longitude": 45.3448603,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1080300778",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1220318170",
+      "name": "یاریگای تارتانی شەهید کامەران",
+      "aliases": [
+        "یاریگای تارتانی شەهید کامەران"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 34.9770816,
+      "longitude": 45.8043526,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1220318170",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای تارتانی شەهید کامەران",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/603724101",
+      "name": "یاریگای تۆپی پێ",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.674286,
+      "longitude": 45.0467645,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/603724101",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/776079014",
+      "name": "یاریگای تۆپی پێی پیرەمەگروون",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.736901,
+      "longitude": 45.1500671,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/776079014",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/303602129",
+      "name": "یاریگای تۆپی پێی یازدەی ئادار",
+      "aliases": [
+        "یاریگای تۆپی پێی یازدەی ئادار"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.1966812,
+      "longitude": 44.1412799,
+      "sport": "",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/303602129",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای تۆپی پێی یازدەی ئادار",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1079826698",
+      "name": "یاریگای تۆپیپێی کەلار کۆن",
+      "aliases": [
+        "یاریگای تۆپیپێی کەلار کۆن"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 34.6378405,
+      "longitude": 45.3073507,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1079826698",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای تۆپیپێی کەلار کۆن",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/6525545125",
+      "name": "یاریگای حامیە",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.6196722,
+      "longitude": 44.5479356,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/node/6525545125",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/263782376",
+      "name": "یاریگای خالی کاکەم",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.3116616,
+      "longitude": 45.6863934,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/263782376",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/302297152",
+      "name": "یاریگای خەبات",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2716004,
+      "longitude": 43.6961582,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/302297152",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/722122641",
+      "name": "یاریگای داخراوی حاجی داود",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5396857,
+      "longitude": 44.8431045,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/722122641",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "relation/12008363",
+      "name": "یاریگای دەستکردی K Energy",
+      "aliases": [
+        "یاریگای دەستکردی K Energy",
+        "Yarîgay Destkirdî K Energy"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.3485831,
+      "longitude": 44.1774374,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/relation/12008363",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای دەستکردی K Energy",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/439147941",
+      "name": "یاریگای زانکۆ",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 34.6258014,
+      "longitude": 45.3105177,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/439147941",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/488642484",
+      "name": "یاریگای سلێمانی",
+      "aliases": [
+        "یاریگای سلێمانی"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5498254,
+      "longitude": 45.4289665,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/488642484",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای سلێمانی",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/299038199",
+      "name": "یاریگای سیدەکان",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8066759,
+      "longitude": 44.6643634,
+      "sport": "soccer;football",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/299038199",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1080264999",
+      "name": "یاریگای سیروان",
+      "aliases": [
+        "یاریگای سیروان"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 34.6289545,
+      "longitude": 45.3144674,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1080264999",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای سیروان",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/829867104",
+      "name": "یاریگای سەرکارێز",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5503115,
+      "longitude": 45.4487131,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/829867104",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/912507111",
+      "name": "یاریگای سەرکارێز",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5476079,
+      "longitude": 45.4421448,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/912507111",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/776023787",
+      "name": "یاریگای شانەدەری",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.4060388,
+      "longitude": 45.8951377,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/776023787",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/758667066",
+      "name": "یاریگای شۆڕش",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2109231,
+      "longitude": 44.0216016,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/758667066",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1287200200",
+      "name": "یاریگای شێخ تەویل",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.0244859,
+      "longitude": 45.4674544,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1287200200",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/997113115",
+      "name": "یاریگای شەهید وەتەن",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2399606,
+      "longitude": 44.8844364,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/997113115",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1080300782",
+      "name": "یاریگای شەهید ڕەمەزان گڵاڵی",
+      "aliases": [
+        "یاریگای شەهید ڕەمەزان گڵاڵی"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 34.635351,
+      "longitude": 45.3438113,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1080300782",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای شەهید ڕەمەزان گڵاڵی",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/694827249",
+      "name": "یاریگای فریزی حامیە",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.61967,
+      "longitude": 44.5479427,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/694827249",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1103018736",
+      "name": "یاریگای فوتساڵی پێشمەرگە",
+      "aliases": [
+        "یاریگای فوتساڵی پێشمەرگە"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.316332,
+      "longitude": 45.6625557,
+      "sport": "futsal",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1103018736",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای فوتساڵی پێشمەرگە",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/790803831",
+      "name": "یاریگای قوتابخانە",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.1736648,
+      "longitude": 44.0235707,
+      "sport": "soccer;basketball;volleyball",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/790803831",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/830301954",
+      "name": "یاریگای ناوەندی وەرزش و لاوانی ڕانیە",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2514912,
+      "longitude": 44.8700687,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/830301954",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/263633852",
+      "name": "یاریگای هندرێن",
+      "aliases": [
+        "یاریگای هندرێن"
+      ],
+      "city": "هەولێر",
+      "region": "پارێزگای هەولێر",
+      "address": "شەقامی یاسین خورشید نەجاڕ",
+      "latitude": 36.21706,
+      "longitude": 43.9985709,
+      "sport": "futsal",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/263633852",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای هندرێن",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/785420448",
+      "name": "یاریگای هەواری شار",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5991379,
+      "longitude": 45.400773,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/785420448",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/911980018",
+      "name": "یاریگای چوارتا",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.7152778,
+      "longitude": 45.573099,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/911980018",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/488677220",
+      "name": "یاریگای چیا",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5389472,
+      "longitude": 45.4463391,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/488677220",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1239188119",
+      "name": "یاریگای چەمچەماڵ",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5394897,
+      "longitude": 44.8406226,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/1239188119",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/988065982",
+      "name": "یاریگای کاپیتانۆ",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.603043,
+      "longitude": 45.4058263,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/988065982",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1071541349",
+      "name": "یاریگای کوردستان",
+      "aliases": [
+        "یاریگای کوردستان"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.3180786,
+      "longitude": 45.6716742,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1071541349",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای کوردستان",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/532676831",
+      "name": "یاریگای کۆلێژی تەکنیکی شەقڵاوە",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.4070015,
+      "longitude": 44.3096497,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/way/532676831",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/10720754266",
+      "name": "یاریگای کۆلێژی وەرزش",
+      "aliases": [],
+      "city": "سلێمانی",
+      "region": "پارێزگای سلێمانی",
+      "address": "",
+      "latitude": 35.5791933,
+      "longitude": 45.3566026,
+      "sport": "soccer",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/node/10720754266",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/996940455",
+      "name": "یاریگای کێوەڕەش",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.2578051,
+      "longitude": 44.8962592,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/996940455",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/653664486",
+      "name": "یاریگای کەمپی کاوە",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.9728256,
+      "longitude": 44.0401898,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/653664486",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1357814396",
+      "name": "یاریگای گردەگۆزینە",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 34.5885582,
+      "longitude": 45.2991429,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1357814396",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1102610981",
+      "name": "یاریگای گشتی باوەنوور",
+      "aliases": [
+        "یاریگای گشتی باوەنوور"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 34.8226018,
+      "longitude": 45.5121261,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1102610981",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای گشتی باوەنوور",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/835238344",
+      "name": "یاریگای گوندی ئەڵمانی",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5816425,
+      "longitude": 45.4544745,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/835238344",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/776011529",
+      "name": "یاریگای گۆزەکان",
+      "aliases": [
+        "یاریگای گۆزەکان",
+        "yarigay Gozakan"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.5533219,
+      "longitude": 45.4491261,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/776011529",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای گۆزەکان",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "node/9915801352",
+      "name": "یاریگای گەورەی سۆران لە دێلزیان",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.6920303,
+      "longitude": 44.5163557,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/node/9915801352",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1492963805",
+      "name": "یاریگای گەورەی ڕەواندز",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.6120427,
+      "longitude": 44.5225308,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1492963805",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/1008726810",
+      "name": "یاریگای یانەی وەرزشی تەق تەق",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.897785,
+      "longitude": 44.5819083,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/1008726810",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/230475778",
+      "name": "یاریگای ‌حەمەی کەریم",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 34.6245906,
+      "longitude": 45.3191204,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/230475778",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/543124153",
+      "name": "یاریگه‌ه",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 37.1654395,
+      "longitude": 42.6785694,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/543124153",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/479952963",
+      "name": "یاریگە سوتاوەکە",
+      "aliases": [
+        "یاریگە سوتاوەکە"
+      ],
+      "city": "Erbil",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.1199488,
+      "longitude": 44.0623254,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/479952963",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگە سوتاوەکە",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/293725596",
+      "name": "یاریگەها برا",
+      "aliases": [
+        "یاریگای برا",
+        "Yarîgeha Bira"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8693048,
+      "longitude": 42.9417794,
+      "sport": "american_football;soccer;football",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/293725596",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگای برا",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "relation/13429448",
+      "name": "یاریگەها تەپا پێ",
+      "aliases": [
+        "یاریگەی تۆپی پێ",
+        "Yarîgeha Tepa Pê"
+      ],
+      "city": "دهۆک",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.8578445,
+      "longitude": 42.9127917,
+      "sport": "",
+      "kind": "stadium",
+      "source": "https://www.openstreetmap.org/relation/13429448",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "یاریگەی تۆپی پێ",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/303249086",
+      "name": "یانه‌ی وه‌رزشی كۆیه‌",
+      "aliases": [
+        "یانه‌ی وه‌رزشی كۆیه‌"
+      ],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 36.0797066,
+      "longitude": 44.6322701,
+      "sport": "soccer",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/303249086",
+      "names": {
+        "en": "",
+        "ar": "یانه‌ی وه‌رزشی كۆیه‌",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    },
+    {
+      "id": "way/993410895",
+      "name": "یانەی وەرزشی عەربەت",
+      "aliases": [],
+      "city": "",
+      "region": "Kurdistan Region",
+      "address": "",
+      "latitude": 35.4217868,
+      "longitude": 45.5835972,
+      "sport": "",
+      "kind": "pitch",
+      "source": "https://www.openstreetmap.org/way/993410895",
+      "names": {
+        "en": "",
+        "ar": "",
+        "ckb": "",
+        "kmr": ""
+      },
+      "verification": "Map record only; not owner-verified or confirmed bookable"
+    }
+  ]
+}
