@@ -201,11 +201,9 @@ export const AuthDialog = ({ open, onOpenChange, initialTarget = "guest" }: Auth
       return;
     }
     if (method === "email" && data.session) {
-      // Never grant access from signup before the email-verification policy is
-      // enforced by Supabase. This also protects the app if that setting is
-      // accidentally disabled later.
-      await supabase.auth.signOut();
-      toast({ title: "Email verification required", description: "Check your email and verify your address before signing in.", variant: "destructive" });
+      // Supabase auto-confirms email signups (no email provider yet); useAuth still rejects unconfirmed sessions.
+      toast({ title: "Account created", description: "Welcome to Yarika." });
+      await closeAndContinue(data.user ?? undefined);
       return;
     }
     if (method === "email") {

@@ -5,7 +5,7 @@ additional_redirect_urls = ["https://yarika.online/**", "https://www.yarika.onli
 site_url = "https://yarika.online"
 
 [auth.email]
-enable_confirmations = true
+enable_confirmations = false
 max_frequency = "1m0s"
 otp_length = 8
 
