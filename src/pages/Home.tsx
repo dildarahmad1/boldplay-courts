@@ -14,6 +14,7 @@ import DiscoverBanner from "@/components/home/DiscoverBanner";
 import FeaturedDestinations from "@/components/home/FeaturedDestinations";
 import ComingCities from "@/components/home/ComingCities";
 import FAQSection from "@/components/home/FAQSection";
+import InstallAppPrompt from "@/components/home/InstallAppPrompt";
 import Footer from "@/components/Footer";
 import DestinationAutocomplete from "@/components/search/DestinationAutocomplete";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -249,6 +250,7 @@ const Home = () => {
 
       {/* Footer */}
       <Footer />
+      <InstallAppPrompt />
     </div>
   );
 };

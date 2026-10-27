@@ -3,6 +3,12 @@ import { createElement } from "react";
 import "./index.css";
 import AppErrorBoundary from "./components/AppErrorBoundary";
 
+// Chrome can fire this before the lazy App mounts; keep it for the home-page install prompt.
+window.addEventListener("beforeinstallprompt", (event) => {
+  event.preventDefault();
+  (window as Window & { __yarikaInstallPrompt?: Event }).__yarikaInstallPrompt = event;
+});
+
 const rootElement = document.getElementById("root");
 
 if (rootElement) {
