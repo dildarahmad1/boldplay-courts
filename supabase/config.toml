@@ -1,8 +1,8 @@
-project_id = "xgqucualmmewzivximpx"
+project_id = "jwvpqljnzhjzanwhcnww"
 
 [auth]
-additional_redirect_urls = ["https://dildarahmad1.github.io/boldplay-courts/**", "http://localhost:8080/**", "http://localhost:8090/**"]
-site_url = "https://dildarahmad1.github.io/boldplay-courts/"
+additional_redirect_urls = ["https://yarika.online/**", "https://www.yarika.online/**", "http://localhost:8080/**", "http://localhost:8090/**"]
+site_url = "https://yarika.online"
 
 [auth.email]
 enable_confirmations = true
@@ -36,4 +36,13 @@ verify_jwt = true
 
 # Development utility: its own secret guard and ALLOW_DEMO_SEED gate are required.
 [functions.seed-demo-users]
+verify_jwt = false
+
+[functions.cancel-expired-bookings]
+verify_jwt = false
+
+[functions.mark-completed-bookings]
+verify_jwt = false
+
+[functions.process-pending-payouts]
 verify_jwt = false

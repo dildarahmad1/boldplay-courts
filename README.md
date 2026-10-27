@@ -2,7 +2,7 @@
 
 Yarika is a sports-court booking application built with **Vite, React and TypeScript**, backed by **Supabase Postgres, Auth, Storage and Edge Functions**.
 
-Live site: https://dildarahmad1.github.io/boldplay-courts/
+Live site: https://yarika.online
 
 ## Repository layout
 
@@ -56,7 +56,9 @@ npm run build:pages
 
 ## Deploy
 
-Push to `main` or run **Actions → Build and deploy Yarika → Run workflow**. The workflow reads `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` from repository variables, checks the frontend and backend source, tests database restoration in a disposable PostgreSQL 17 instance, and deploys the compiled website to GitHub Pages.
+Production runs on Railway (project `yarika`, service `web`) behind Cloudflare at `yarika.online`. `Dockerfile` builds the site with the service's `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` variables and serves `dist/` with Caddy (`Caddyfile`). Deploy with `railway up --service web`.
+
+The GitHub Pages build is still available: push to `main` or run **Actions → Build and deploy Yarika → Run workflow**. The workflow reads `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` from repository variables, checks the frontend and backend source, tests database restoration in a disposable PostgreSQL 17 instance, and deploys the compiled website to GitHub Pages.
 
 Backend schema migrations and Edge Function deployments are separate operations; see [the backend guide](docs/backend.md). A frontend deployment does not automatically modify the production database.
 

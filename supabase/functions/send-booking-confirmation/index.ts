@@ -55,6 +55,87 @@ const copy = {
   },
 } as const;
 
+async function sendViaSmtp({
+  host,
+  port = 465,
+  user,
+  pass,
+  from,
+  to,
+  subject,
+  html,
+}: {
+  host: string;
+  port?: number;
+  user: string;
+  pass: string;
+  from: string;
+  to: string;
+  subject: string;
+  html: string;
+}) {
+  const conn = await Deno.connectTls({ hostname: host, port });
+  const encoder = new TextEncoder();
+  const decoder = new TextDecoder();
+  const toB64 = (s: string) => btoa(Array.from(encoder.encode(s), (b) => String.fromCharCode(b)).join(''));
+
+  async function readChunk(): Promise<string> {
+    const buf = new Uint8Array(4096);
+    let str = '';
+    while (!str.includes('\r\n')) {
+      const n = await conn.read(buf);
+      if (n === null) break;
+      str += decoder.decode(buf.subarray(0, n));
+    }
+    return str;
+  }
+
+  async function sendCmd(command: string, expectedPrefix: string) {
+    await conn.write(encoder.encode(command + '\r\n'));
+    const resp = await readChunk();
+    if (!resp.startsWith(expectedPrefix)) {
+      throw new Error(`SMTP Error [${command.slice(0, 4)}]: ${resp.trim()}`);
+    }
+    return resp;
+  }
+
+  try {
+    const banner = await readChunk();
+    if (!banner.startsWith('220')) throw new Error(`Invalid SMTP banner: ${banner}`);
+
+    await sendCmd('EHLO localhost', '250');
+    await sendCmd('AUTH LOGIN', '334');
+    await sendCmd(toB64(user), '334');
+    await sendCmd(toB64(pass), '235');
+
+    const fromAddr = from.includes('<') ? from.match(/<([^>]+)>/)?.[1] ?? from : from;
+    const toAddr = to.includes('<') ? to.match(/<([^>]+)>/)?.[1] ?? to : to;
+
+    await sendCmd(`MAIL FROM:<${fromAddr}>`, '250');
+    await sendCmd(`RCPT TO:<${toAddr}>`, '250');
+    await sendCmd('DATA', '354');
+
+    const rawMessage = [
+      `From: ${from}`,
+      `To: ${to}`,
+      `Subject: =?UTF-8?B?${toB64(subject)}?=`,
+      `MIME-Version: 1.0`,
+      `Content-Type: text/html; charset=UTF-8`,
+      `Content-Transfer-Encoding: base64`,
+      '',
+      toB64(html),
+      '.',
+    ].join('\r\n');
+
+    await sendCmd(rawMessage, '250');
+    await sendCmd('QUIT', '221');
+  } finally {
+    try {
+      conn.close();
+    } catch (_) {}
+  }
+}
+
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: corsHeaders });
   if (req.method !== 'POST') return json({ error: 'Method not allowed' }, 405);
@@ -67,9 +148,18 @@ Deno.serve(async (req) => {
     const anonKey = Deno.env.get('SUPABASE_ANON_KEY') ?? '';
     const serviceKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? '';
     const resendKey = Deno.env.get('RESEND_API_KEY') ?? '';
-    const from = Deno.env.get('RESEND_FROM_EMAIL') ?? '';
-    if (!resendKey || !from) {
-      return json({ error: 'Yarika email delivery needs a Resend API key and a verified sender address' }, 503);
+    const resendFrom = Deno.env.get('RESEND_FROM_EMAIL') ?? '';
+    const smtpHost = Deno.env.get('SMTP_HOST') ?? '';
+    const smtpPort = Number(Deno.env.get('SMTP_PORT') ?? '465');
+    const smtpUser = Deno.env.get('SMTP_USER') ?? '';
+    const smtpPass = Deno.env.get('SMTP_PASS') ?? '';
+    const smtpFrom = Deno.env.get('SMTP_FROM') ?? 'Yarika <noreply@yarika.online>';
+
+    const hasResend = !!(resendKey && resendFrom);
+    const hasSmtp = !!(smtpHost && smtpUser && smtpPass);
+
+    if (!hasResend && !hasSmtp) {
+      return json({ error: 'Yarika email delivery needs an SMTP provider (SMTP_HOST/SMTP_USER/SMTP_PASS) or a Resend API key (RESEND_API_KEY/RESEND_FROM_EMAIL)' }, 503);
     }
 
     const userClient = createClient(supabaseUrl, anonKey, { auth: { persistSession: false } });
@@ -121,18 +211,31 @@ Deno.serve(async (req) => {
     const direction = locale === 'ar' || locale === 'ckb' ? 'rtl' : 'ltr';
     const html = `<div dir="${direction}" style="background:#f5f7f6;padding:32px 12px;font-family:Arial,sans-serif;color:#18221c"><div style="max-width:600px;margin:auto;background:#fff;border:1px solid #e6ebe7;border-radius:18px;overflow:hidden"><div style="padding:24px 30px;background:#135c3b;color:white;font-size:22px;font-weight:700">Yarika</div><div style="padding:30px"><p style="margin:0 0 8px;color:#567264;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px">${esc(text.subject)}</p><h1 style="margin:0 0 18px;font-size:27px">${esc(text.heading)}</h1><p>${esc(text.hello)}${firstName ? ` ${esc(firstName)}` : ''},</p><p style="line-height:1.6">${esc(text.intro)}</p><table style="width:100%;border-collapse:collapse;margin:24px 0">${rows}</table><p style="font-size:14px;line-height:1.6;color:#667085">${esc(text.footer)}</p></div><div style="padding:18px 30px;background:#f9fbf9;color:#667085;font-size:12px">Yarika · Kurdistan Region of Iraq</div></div></div>`;
 
-    const emailResponse = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${resendKey}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ from, to: [to], subject: text.subject, html }),
-    });
-    if (!emailResponse.ok) {
-      const errorBody = await emailResponse.text();
-      console.error('Resend rejected booking email:', emailResponse.status, errorBody);
-      return json({ error: 'Booking accepted, but the confirmation email could not be sent' }, 502);
+    if (hasResend) {
+      const emailResponse = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${resendKey}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ from: resendFrom, to: [to], subject: text.subject, html }),
+      });
+      if (!emailResponse.ok) {
+        const errorBody = await emailResponse.text();
+        console.error('Resend rejected booking email:', emailResponse.status, errorBody);
+        return json({ error: 'Booking accepted, but the confirmation email could not be sent' }, 502);
+      }
+    } else {
+      await sendViaSmtp({
+        host: smtpHost,
+        port: smtpPort,
+        user: smtpUser,
+        pass: smtpPass,
+        from: smtpFrom,
+        to,
+        subject: text.subject,
+        html,
+      });
     }
 
-    return json({ success: true, recipient: to });
+    return json({ success: true, recipient: to, provider: hasResend ? 'resend' : 'smtp' });
   } catch (error) {
     console.error('send-booking-confirmation failed', error);
     return json({ error: error instanceof Error ? error.message : 'Unexpected server error' }, 500);

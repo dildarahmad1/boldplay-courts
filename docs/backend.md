@@ -4,26 +4,36 @@
 
 Yarika uses Supabase rather than a separate Express/Node server. The frontend calls Postgres RPCs, the Data API, Auth, Storage and TypeScript Edge Functions.
 
-- Project ref: `xgqucualmmewzivximpx`
-- API URL: `https://xgqucualmmewzivximpx.supabase.co`
-- Dashboard: https://supabase.com/dashboard/project/xgqucualmmewzivximpx
+- Project ref: `jwvpqljnzhjzanwhcnww`
+- API URL: `https://jwvpqljnzhjzanwhcnww.supabase.co`
+- Dashboard: https://supabase.com/dashboard/project/jwvpqljnzhjzanwhcnww
 - Schema snapshot date: 2026-10-27
 
 The live project contains the application tables, database functions, grants and row-level access policies. `supabase/schema.sql` is a schema-only snapshot; it contains no account or booking rows.
 
 ## Source versus deployed Edge Functions
 
-Verified deployed on 2026-10-27:
+Verified deployed and active:
 
-| Function | Purpose | Gateway JWT verification |
-| --- | --- | --- |
-| `search-listings` | Public court search; uses the caller's context and database access policies | Off |
-| `admin-create-host` | Creates host accounts after checking an authenticated administrator | Off; authorization is checked inside the function |
-| `send-booking-confirmation` | Booking email delivery | On |
+| Function | Purpose | Gateway JWT verification | Scheduling |
+| --- | --- | --- | --- |
+| `search-listings` | Public court search; uses caller's context and database access policies | Off | On-demand |
+| `admin-create-host` | Creates host accounts after checking authenticated administrator | Off; authorization checked in function | On-demand |
+| `send-booking-confirmation` | Booking email delivery (supports direct SMTP / BillionMail & Resend fallback) | On | On-demand |
+| `cancel-expired-bookings` | Cancels expired bookings past slot time or payment timeout | Off | `pg_cron` every 10 mins (`*/10 * * * *`) |
+| `mark-completed-bookings` | Transitions confirmed bookings to completed after end time | Off | `pg_cron` every 10 mins (`*/10 * * * *`) |
+| `process-pending-payouts` | Processes approved pending payouts | Off | `pg_cron` hourly (`0 * * * *`) |
 
-The development-only `seed-demo-users` utility is also included in `supabase/functions/`. Three old, undeployed jobs (`mark-completed-bookings`, `cancel-expired-bookings`, and `process-pending-payouts`) are archived under `supabase/archive/` and excluded from deployment. The first two call missing legacy RPCs; the payout job simulates success without transferring money. They must not be deployed. See the archive README.
+The demo-user utility (`seed-demo-users`) is disabled unless `ALLOW_DEMO_SEED=true`, a valid cron authorization secret is provided, and all three `DEMO_*_PASSWORD` secrets are configured. Use it only in a development project. The RPCs for `cancel-expired-bookings` and `mark-completed-bookings` have been created and the functions are deployed and scheduled via `pg_cron`.
 
-The demo-user utility is disabled unless `ALLOW_DEMO_SEED=true`, a valid cron authorization secret is provided, and all three `DEMO_*_PASSWORD` secrets are configured. Use it only in a development project.
+## Email and Mailing Configuration
+
+Yarika uses custom SMTP connected to BillionMail (`mail.traceira.com`).
+- **SMTP Server:** `mail.traceira.com`
+- **Submission Ports:** `587` (STARTTLS) and `465` (SSL/TLS)
+- **Supabase Auth Sender:** `noreply@yarika.online` (via `mail.traceira.com:587`)
+- **Booking Confirmation Sender:** Configured via Supabase function secrets (`SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`) with automatic Resend fallback if `RESEND_API_KEY` is supplied.
+- **Admin & Support Mailboxes:** `admin@yarika.online`, `noreply@yarika.online`, `elend@yarika.online` hosted on BillionMail.
 
 ## Working on the existing project
 
@@ -33,7 +43,7 @@ Install a current Supabase CLI, authenticate, and link the checkout:
 
 ```sh
 supabase login
-supabase link --project-ref xgqucualmmewzivximpx
+supabase link --project-ref jwvpqljnzhjzanwhcnww
 ```
 
 Do not replay the schema snapshot or historical migrations into the existing live project. They describe objects that already exist. Inspect migration history first and apply only new, reviewed changes. In particular, the two migrations dated `20261027` have already been applied to the live project.
@@ -41,7 +51,7 @@ Do not replay the schema snapshot or historical migrations into the existing liv
 Deploy a reviewed function explicitly, for example:
 
 ```sh
-supabase functions deploy search-listings --project-ref xgqucualmmewzivximpx --no-verify-jwt
+supabase functions deploy search-listings --project-ref jwvpqljnzhjzanwhcnww --no-verify-jwt
 ```
 
 The public search function relies on Postgres row-level policies. The admin-create-host function performs its own user and administrator checks before using server privileges.
