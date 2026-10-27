@@ -42,9 +42,9 @@ export const normalizeTimeInput = (value: string) => value
   .replace(/[۰-۹]/g, digit => String(digit.charCodeAt(0) - 1776))
   .replace(/[^0-9:]/g, "").slice(0, 5);
 
-/** "18:00 – 20:00" */
+/** "18:00 – 20:00", LTR-isolated so RTL pages don't render it as "20:00 – 18:00" */
 export const formatSlotRange = (booking: SlotBookingLike): string =>
-  `${formatTimeOfDay(booking.start_time)} – ${formatTimeOfDay(booking.end_time)}`;
+  `⁦${formatTimeOfDay(booking.start_time)} – ${formatTimeOfDay(booking.end_time)}⁩`;
 
 /** "2 hours" */
 export const formatDuration = (booking: SlotBookingLike): string => {

@@ -1,4 +1,4 @@
-import { formatTimeOfDay as formatTime, normalizeTimeInput } from "@/lib/bookingTime";
+import { formatSlotRange, formatTimeOfDay as formatTime, normalizeTimeInput } from "@/lib/bookingTime";
 import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { format, parseISO, startOfMonth, endOfMonth } from "date-fns";
@@ -86,9 +86,11 @@ const BookingWidget = ({ listing }: BookingWidgetProps) => {
   const availabilityText = () => {
     const opening = formatTime(listing.opening_time!);
     const closing = formatTime(listing.closing_time!);
-    if (language === "ar") return `مفتوح من ${opening} إلى ${closing} · مدة الحجز ${minHours}–${maxHours} ساعات كاملة`;
-    if (language === "ckb") return `کراوەیە لە ${opening} تا ${closing} · ماوەی حجز ${minHours}–${maxHours} کاتژمێری تەواو`;
-    if (language === "kmr") return `ڤەکرییە ژ ${opening} هەتا ${closing} · ماوەیا حجزێ ${minHours}–${maxHours} دەمژمێرێن تەمام`;
+    // LTR isolate keeps "1–5" from rendering as "5–1" inside RTL sentences.
+    const hoursRange = `\u2066${minHours}–${maxHours}\u2069`;
+    if (language === "ar") return `مفتوح من ${opening} إلى ${closing} · مدة الحجز ${hoursRange} ساعات كاملة`;
+    if (language === "ckb") return `کراوەیە لە ${opening} تا ${closing} · ماوەی حجز ${hoursRange} کاتژمێری تەواو`;
+    if (language === "kmr") return `ڤەکرییە ژ ${opening} هەتا ${closing} · ماوەیا حجزێ ${hoursRange} دەمژمێرێن تەمام`;
     return `Open ${opening}–${closing} · book for ${minHours}–${maxHours} whole hours`;
   };
 
@@ -562,7 +564,7 @@ const BookingWidget = ({ listing }: BookingWidgetProps) => {
               </p>
             ) : (
               <div className="grid grid-cols-[3rem_1fr_3rem] items-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 p-2">
-                <Button type="button" variant="outline" size="icon" className="h-11 w-11 rounded-xl bg-white" onClick={() => moveStartTime(-1)} disabled={validStartOptions.length === 0 || startTime === validStartOptions[0]?.slot_start} aria-label="Previous available time"><ChevronLeft className="h-4 w-4" /></Button>
+                <Button type="button" variant="outline" size="icon" className="h-11 w-11 rounded-xl bg-white" onClick={() => moveStartTime(-1)} disabled={validStartOptions.length === 0 || startTime === validStartOptions[0]?.slot_start} aria-label="Previous available time"><ChevronLeft className="h-4 w-4 rtl:rotate-180" /></Button>
                 <div className="text-center">
                   <input
                     type="text"
@@ -583,12 +585,12 @@ const BookingWidget = ({ listing }: BookingWidgetProps) => {
                   />
                   <p className="text-[11px] text-muted-foreground">Type a time or use the arrows</p>
                 </div>
-                <Button type="button" variant="outline" size="icon" className="h-11 w-11 rounded-xl bg-white" onClick={() => moveStartTime(1)} disabled={validStartOptions.length === 0 || startTime === validStartOptions[validStartOptions.length - 1]?.slot_start} aria-label="Next available time"><ChevronRight className="h-4 w-4" /></Button>
+                <Button type="button" variant="outline" size="icon" className="h-11 w-11 rounded-xl bg-white" onClick={() => moveStartTime(1)} disabled={validStartOptions.length === 0 || startTime === validStartOptions[validStartOptions.length - 1]?.slot_start} aria-label="Next available time"><ChevronRight className="h-4 w-4 rtl:rotate-180" /></Button>
               </div>
             )}
             {startTime && endTime && (
               <p className="text-xs text-muted-foreground mt-2">
-                Playing {formatTime(startTime)}–{formatTime(endTime)} ·{" "}
+                Playing {formatSlotRange({ start_time: startTime, end_time: endTime })} ·{" "}
                 {formatHours(durationHours)}
               </p>
             )}
@@ -652,7 +654,7 @@ const BookingWidget = ({ listing }: BookingWidgetProps) => {
             <div className="space-y-2 pt-2">
               <div className="flex justify-between text-sm">
                 <span>
-                  {formatTime(startTime!)}–{formatTime(endTime!)} ({formatHours(hours)})
+                  {formatSlotRange({ start_time: startTime, end_time: endTime })} ({formatHours(hours)})
                 </span>
 
                 <span>{formatIQD(subtotal)}</span>

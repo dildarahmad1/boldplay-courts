@@ -44,11 +44,11 @@ const StepPricing = ({ formData, updateFormData, compact = false }: StepPricingP
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="space-y-2">
             <label htmlFor="court-opening-time" className="text-sm font-medium">Opening time</label>
-            <Input id="court-opening-time" type="time" value={formData.opening_time} onChange={(event) => updateFormData({ opening_time: event.target.value })} required />
+            <Input id="court-opening-time" type="time" dir="ltr" value={formData.opening_time} onChange={(event) => updateFormData({ opening_time: event.target.value })} required />
           </div>
           <div className="space-y-2">
             <label htmlFor="court-closing-time" className="text-sm font-medium">Closing time</label>
-            <Input id="court-closing-time" type="time" value={formData.closing_time} onChange={(event) => updateFormData({ closing_time: event.target.value })} required />
+            <Input id="court-closing-time" type="time" dir="ltr" value={formData.closing_time} onChange={(event) => updateFormData({ closing_time: event.target.value })} required />
           </div>
         </div>
       </section>

@@ -310,7 +310,7 @@ const HostAvailability = () => {
                             : "border-border bg-card hover:border-primary"
                       )}
                     >
-                      <span className="font-medium">
+                      <span className="font-medium" dir="ltr">
                         {formatTime(slot.slot_start)}–{formatTime(slot.slot_end)}
                       </span>
                       <span className="flex items-center gap-1">

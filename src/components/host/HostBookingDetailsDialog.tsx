@@ -85,7 +85,7 @@ export function HostBookingDetailsDialog({ booking, open, onOpenChange }: Props)
               <div className="rounded-lg border divide-y">
                 {slots.map((slot, index) => (
                   <div key={`${slot.start}-${index}`} className="flex justify-between gap-3 px-3 py-2">
-                    <span>{time(slot.start)}–{time(slot.end)}</span>
+                    <span dir="ltr">{time(slot.start)}–{time(slot.end)}</span>
                     <span>{amount(slot.price)}</span>
                   </div>
                 ))}
